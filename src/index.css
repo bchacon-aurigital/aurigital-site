@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000c1a;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.quicksand-reg {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.quicksand-md {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-sb {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.quicksand-b {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.brands-gradient {
+  background: linear-gradient(90deg, #00c8cf, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.transparent-blur-button {
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+  border-radius: 8px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.transparent-blur-button2 {
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+  border-radius: 8px; /* Rounded corners */
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Background blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.nav_blue {
+  background-color: rgb(7, 12, 26);
+}
+
+.bg-content-img {
+  background-image: url(./assets/Images/bg-support.png);
+  min-height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .bg-content-img {
+    background-image: url(/src/assets/Images/bg-support.png);
+    min-height: 500px;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
