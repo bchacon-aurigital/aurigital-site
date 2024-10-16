@@ -39,7 +39,7 @@ const Process = () => {
       if (isSmallDevice) {
         // Initialize AOS only for small devices
         AOS.init({
-          duration: 1000,
+          duration: 1500,
           easing: "ease-in-out",
           offset: 200, // Adjust the offset to trigger animations at the right time
         });

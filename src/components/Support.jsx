@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const Support = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       offset: 200, // Adjust the offset to trigger animations at the right time
     });

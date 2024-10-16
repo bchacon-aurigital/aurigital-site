@@ -8,14 +8,14 @@ import instagram2 from "./icons/instagram2.svg";
 import facebook2 from "./icons/facebook2.svg";
 import whatsapp2 from "./icons/whatsapp2.svg";
 
-import BGSupport from "./Images/bg-support.png";
-import ImageShadow from "./Images/Light3.png";
+import BGSupport from "./Images/bg-support.avif";
+import ImageShadow from "./Images/Light3.avif";
 
-import Benefit1 from "./Images/bg-benefit1.png";
-import Benefit2 from "./Images/bg-benefit2.png";
-import ImageRow from "./Images/row.png";
+import Benefit1 from "./Images/bg-benefit1.avif";
+import Benefit2 from "./Images/bg-benefit2.avif";
+import ImageRow from "./Images/row.avif";
 
-import ProgressBar from "./Images/bar.png";
+import ProgressBar from "./Images/bar.avif";
 import Process1 from "./Videos/bg-process1.mp4";
 import Process2 from "./Videos/bg-process2.mp4";
 import Process3 from "./Videos/bg-process3.mp4";
@@ -23,13 +23,15 @@ import Process4 from "./Videos/bg-process4.mp4";
 import BGTestimonials from "./Videos/bg-testimonials.mp4";
 import Support1 from "./Videos/bg-support1.mp4";
 import Support2 from "./Videos/bg-support2.mp4";
+import StatementVideo from "./Videos/statement-video.webm";
+import HeroVideo from "./Videos/aurigital-hero.webm";
 
-import Abraham from "./Images/abraham.png";
-import Tulsi from "./Images/tulsi.png";
-import Calo from "./Images/calo.png";
+import Abraham from "./Images/abraham.avif";
+import Tulsi from "./Images/tulsi.avif";
+import Calo from "./Images/calo.avif";
 
-import PortfolioImg from "./Images/portfolio.png";
-import PortfolioMob from "./Images/portfoliomob.png";
+import PortfolioImg from "./Images/portfolio.avif";
+import PortfolioMob from "./Images/portfoliomob.avif";
 
 export {
   logo,
@@ -59,4 +61,6 @@ export {
   PortfolioMob,
   Support1,
   Support2,
+  StatementVideo,
+  HeroVideo,
 };

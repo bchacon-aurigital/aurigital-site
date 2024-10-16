@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const Benefits = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       offset: 200, // Adjust the offset to trigger animations at the right time
     });
@@ -22,7 +22,7 @@ const Benefits = () => {
         <div className="right-shadow">
           <img src={ImageShadow} alt="Card Image" />
         </div>
-        <div className="bg-[#1682BE]/10 m-4 lg:m-8 xl:m-28 px-5 py-10 backdrop-blur-md rounded-[2rem]">
+        <div className="bg-[#1682BE]/10 m-4 lg:m-8 xl:mx-44 xl:my-16 px-5 py-10 backdrop-blur-md rounded-[2rem]">
           <div className="max-w-[1100px] mx-auto px-5 lg:px-10">
             <div className="py-10 orbitron max-sm:mx-5">
               <h1 className="text-white leading-10 max-sm:text-2xl text-4xl py-2">

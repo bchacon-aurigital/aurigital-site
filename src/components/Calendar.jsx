@@ -1,5 +1,4 @@
 import { ImageShadow } from "../assets";
-import { useEffect } from "react";
 
 const Calendar = () => {
   return (

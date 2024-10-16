@@ -60,16 +60,7 @@ html {
 }
 
 /* FOOTER STYLE */
-.black-bg-img {
-  background-image: url(../assets/Images/BG-black.png);
-  background-position: center;
-  background-size: cover;
-}
-.bg-footer-img {
-  background-image: url(../assets/Images/BG-Footer.png);
-  background-position: center;
-  background-size: cover;
-}
+
 .back-to-top {
   padding: 12px 40px;
   border: 1px solid white;
@@ -77,15 +68,6 @@ html {
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
   color: white;
-}
-.bg-circle {
-  background-image: url(../assets/Images/Light3.png);
-  align-items: center;
-  background-position-y: -400px;
-  background-position-x: 60px;
-}
-.card-1-bg {
-  background-image: url(../assets/Images/);
 }
 
 .bg-blue-grad {

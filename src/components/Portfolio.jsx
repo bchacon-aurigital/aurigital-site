@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const Portfolio = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Adjust the animation duration
+      duration: 1500, // Adjust the animation duration
     });
   }, []);
 
@@ -29,6 +29,7 @@ const Portfolio = () => {
           <a
             href="https://portfolio.aurigital.com"
             className="border text-white border-[#C6EBFF] text-xs py-2 px-3 rounded-lg bookCallButton"
+            target="_blank"
           >
             Go to Portfolio
           </a>

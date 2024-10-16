@@ -99,22 +99,6 @@ html {
   background-color: rgb(7, 12, 26);
 }
 
-.bg-content-img {
-  background-image: url(./assets/Images/bg-support.png);
-  min-height: 700px;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  .bg-content-img {
-    background-image: url(/src/assets/Images/bg-support.png);
-    min-height: 500px;
-    background-size: cover;
-    background-position: right;
-  }
-}
-
 @layer utilities {
   .text-glow {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
