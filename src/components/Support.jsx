@@ -2,8 +2,12 @@ import { useEffect } from "react";
 import { Support1, Support2, ImageShadow } from "../assets";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
+import { GoArrowRight } from "react-icons/go";
 
-const Support = () => {
+const Support = ({ renderText }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -20,14 +24,12 @@ const Support = () => {
           <img src={ImageShadow} alt="Card Image" />
         </div>
         <div className="max-w-[1100px] flex flex-col mx-auto px-5 lg:px-10">
-          <div className="lg:pt-32 pt-20 pb-14">
+          <div className="max-w-[650px] lg:pt-32 pt-20 pb-14">
             <h1 className="text-white leading-10 max-sm:text-2xl text-4xl py-2 orbitron">
-              Peace Of Mind Plan
+              {t("support.title")}
             </h1>
             <p className="text-white text-md quicksand-md mb-5 ">
-              Hassle-Free Website Management Content. Aurigital actively hosts,
-              manages, <br /> secures and update your website, so you can focus
-              on growing your business.
+              {t("support.description")}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:h-[400px] max-sm:mx-5 relative bg-dark text-white rounded-xl mb-10 gap-5">
@@ -40,18 +42,17 @@ const Support = () => {
                 alt="Card Video"
                 className="w-full rounded-xl h-full object-cover absolute -z-10"
                 autoPlay
+                playsInline
                 loop
                 muted
               ></video>
-              <div className="relative px-2 pt-64">
+              <div className="max-w-[650px] relative px-2 pt-64">
                 <div>
                   <p className="text-lg px-3 pt-4 quicksand-b">
-                    Always Fresh, Always Relevant
+                    {t("support.alwaysFreshTitle")}
                   </p>
                   <p className="text-sm px-3 pb-4 quicksand-md">
-                    We keep your website evolving by updating it with the latest
-                    media assets, promotions, and information, ensuring it
-                    always represents your brand at its best.
+                    {t("support.alwaysFreshDescription")}
                   </p>
                 </div>
               </div>
@@ -59,21 +60,18 @@ const Support = () => {
             <div className="flex flex-col justify-center gap-5">
               <div data-aos="fade-up" className="p-5 bg-blue-grad  rounded-xl">
                 <p className="text-white m-0 text-md quicksand-b">
-                  Regular Updates
+                  {t("support.regularUpdatesTitle")}
                 </p>
                 <p className="text-white text-sm quicksand-reg m-0">
-                  Keep you customer engaged with new content and ideas. Add new
-                  functionalities that help you manage your business as it
-                  grows.
+                  {t("support.regularUpdatesDescription")}
                 </p>
               </div>
               <div data-aos="fade-up" className="p-5 bg-blue-grad rounded-xl">
                 <p className="text-white m-0 text-md quicksand-b">
-                  Technical Support
+                  {t("support.technicalSupportTitle")}
                 </p>
                 <p className="text-white text-sm quicksand-reg m-0">
-                  Whether it's visual or functional, we troubleshoot, assess,
-                  and correct any issues your site may encounter.
+                  {t("support.technicalSupportDescription")}
                 </p>
               </div>
               <div
@@ -82,12 +80,10 @@ const Support = () => {
               >
                 <div>
                   <p className="text-white m-0 text-md quicksand-b ">
-                    Web Security
+                    {t("support.webSecurityTitle")}
                   </p>
                   <p className="text-white text-sm quicksand-reg m-0">
-                    We provide and renew your SSL certificate, building trust
-                    with your visitors and search engines, so your site won't be
-                    flagged as dangerous.
+                    {t("support.webSecurityDescription")}
                   </p>
                 </div>
               </div>
@@ -103,10 +99,10 @@ const Support = () => {
                   <div className="relative text-center p-3">
                     <div>
                       <p className="text-white m-0 text-md quicksand-b text-center">
-                        Manage and Update of Integrations
+                        {t("support.manageIntegrationsTitle")}
                       </p>
                       <p className="text-white text-sm m-0 text-center">
-                        Everything working together <br /> smoothly.
+                        {renderText(t("support.manageIntegrationsDescription"))}
                       </p>
                     </div>
                   </div>
@@ -116,7 +112,7 @@ const Support = () => {
                   className="p-2 border shadow-custom backdrop-blur-3xl border-white rounded-xl"
                 >
                   <p className="text-white m-0 py-2 text-md  quicksand-b text-center">
-                    Are you ready to work <br /> with us?
+                    {renderText(t("support.readyToWork"))}
                   </p>
                   <div className="flex justify-center pb-1">
                     <a
@@ -124,7 +120,7 @@ const Support = () => {
                       target="_blank"
                       className="text-white bg-blue-grad text-sm border p-2 rounded-xl ButtonHoverShadow"
                     >
-                      Message Aurigital
+                      {t("support.messageAurigital")}
                     </a>
                   </div>
                 </div>
@@ -140,18 +136,17 @@ const Support = () => {
                   alt="Card Video"
                   className="w-full rounded-xl h-full object-cover absolute -z-10"
                   autoPlay
+                  playsInline
                   loop
                   muted
                 ></video>
-                <div className="relative pt-40 px-2 ">
+                <div className="max-w-[650px] relative pt-40 px-2 ">
                   <div>
                     <p className="text-lg px-3 quicksand-b">
-                      Personalized Service
+                      {t("support.personalizedServiceTitle")}
                     </p>
                     <p className="text-sm quicksand-md px-3 pb-4">
-                      You get a direct contact assigned to help you with your
-                      requests. <br /> No more searching endlessly through the
-                      web for support channels. We're just a message away!
+                      {t("support.personalizedServiceDescription")}
                     </p>
                   </div>
                 </div>
@@ -165,16 +160,14 @@ const Support = () => {
         >
           <div className="lg:max-w-[1100px] mx-auto px-16">
             <div>
-              <p className="text-white lg:text-2xl  orbitron">
-                NOT SURE FOR WHAT KIND OF WEBSITE <br /> IS RIGHT FOR YOU?
-              </p>
-              <p className="text-white quicksand-reg text-lg py-2 ">
-                Find out now!
+              <p className="text-white lg:text-2xl pb-5 orbitron">
+                {renderText(t("support.notSureTitle"))}
               </p>
             </div>
             <div>
-              <button className="border rounded-xl px-6 py-2  text-sm text-[#C6EBFF] ButtonHoverShadow">
-                Find the website for me
+              <button className="border rounded-xl px-6 py-2 flex gap-1 items-center text-sm text-[#C6EBFF] ButtonHoverShadow">
+                {t("hero.findWebsite")}
+                <GoArrowRight />
               </button>
             </div>
           </div>

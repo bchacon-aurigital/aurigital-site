@@ -3,8 +3,12 @@ import "aos/dist/aos.css";
 import { ScrollParallax } from "react-just-parallax";
 import { Benefit1, Benefit2, ImageShadow, ImageRow } from "../assets";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
-const Benefits = () => {
+const Benefits = ({ renderText }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -22,51 +26,48 @@ const Benefits = () => {
         <div className="right-shadow">
           <img src={ImageShadow} alt="Card Image" />
         </div>
-        <div className="bg-[#1682BE]/10 m-4 lg:m-8 xl:mx-44 xl:my-16 px-5 py-10 backdrop-blur-md rounded-[2rem]">
+        <div className="bg-[#1682BE]/10 m-4 lg:m-8 xl:mx-44 xl:my-16 sm:px-5 py-10 backdrop-blur-md rounded-[2rem]">
           <div className="max-w-[1100px] mx-auto px-5 lg:px-10">
-            <div className="py-10 orbitron max-sm:mx-5">
+            <div className="max-w-[650px] py-10 orbitron max-sm:mx-5">
               <h1 className="text-white leading-10 max-sm:text-2xl text-4xl py-2">
-                Your own digital space
+                {t("benefits.title")}
               </h1>
               <p className="text-white text-md quicksand-md">
-                We craft a website where your personal brand can thrive. Using
-                our team’s skillset <br /> and the right tools, we take care of
-                all the technical aspects of your website so <br /> you can
-                focus on your business and expertise.
+                {renderText(t("benefits.description"))}
               </p>
             </div>
             <div className="flex flex-col md:grid md:grid-cols-[60%,40%] gap-4 justify-center ">
               <div
                 data-aos="fade-up"
-                className="relative shadow-xl bg-dark text-white rounded-xl overflow-hidden max-sm:mx-5"
+                className="relative max-sm:flex max-sm:flex-col shadow-xl bg-dark text-white rounded-xl overflow-hidden max-sm:mx-5"
               >
                 <img
                   src={Benefit1}
                   alt="Card Image"
                   className="lg:w-[800px] h-full object-cover opacity-90 card-image"
+                  style={{
+                    transformOrigin: "start",
+                  }}
                 />
                 <div className="absolute inset-y-0 max-sm:right-0 sm:right-5 flex items-center">
                   <div className="bg-white/20 quicksand-reg rounded-xl px-4 pt-4 md:p-6 backdrop-blur-md">
                     <h5 className="text-md md:text-2xl md:mb-2 orbitron">
-                      Groundbreaking <br /> Technology
+                      {renderText(t("benefits.groundbreakingTechnology"))}
                     </h5>
                     <p className="border-b-[1px] py-1 md:py-0 md:pb-3 text-xs md:text-sm">
-                      The best tools integrated for{" "}
-                      <br className="hidden md:flex" /> maximum{" "}
-                      <br className="flex md:hidden" /> funtionailty and
-                      aesthetic
+                      {renderText(t("benefits.bestTools"))}
                     </p>
                     <p className="border-b-[1px] py-2 bullet-text text-xs md:text-sm">
                       <span className="bullet"></span>
-                      Latest Technology and <br /> design trends
+                      <span> {renderText(t("benefits.gtTrends"))} </span>
                     </p>
                     <p className="border-b-[1px] py-2 bullet-text text-xs md:text-sm">
                       <span className="bullet"></span>
-                      Web functionalities to <br /> authomatize your tasks.
+                      <span> {renderText(t("benefits.gtTasks"))}</span>
                     </p>
                     <p className="py-3 md:py-2 bullet-text text-xs md:text-sm">
                       <span className="bullet"></span>
-                      Animated Interactions <br /> and microanimations
+                      <span> {renderText(t("benefits.gtAnimations"))}</span>
                     </p>
                   </div>
                 </div>
@@ -93,10 +94,7 @@ const Benefits = () => {
                     Generative AI
                   </p>
                   <p className="text-sm quicksand-reg font-extralight">
-                    Let’s take advantage of AI! We complement our websites with
-                    AI generated{" "}
-                    <br className="max-sm:hidden sm:flex md:hidden" /> images
-                    and elements to give it the final touch.{" "}
+                    {renderText(t("benefits.aiDescription"))}
                   </p>
                 </div>
               </div>
@@ -108,19 +106,18 @@ const Benefits = () => {
                 className="h-full bg-blue-grad border text-white rounded-xl md:my-6 shadow-md max-sm:mx-5 flex flex-col"
               >
                 <div className="flex-1 p-10">
-                  <h5 className="text-2xl mb-2 orbitron">Unlimited Reviews</h5>
+                  <h5 className="text-2xl mb-2 orbitron">
+                    {t("benefits.unlimitedReviews")}
+                  </h5>
                   <p className="text-white quicksand-sb text-md my-4">
-                    We undertand that your brand constantly evolves along with
-                    you. That’s why we ensure that your website is up to date
-                    with that evolution.
+                    {renderText(t("benefits.unlimitedReviewsDescription"))}
                   </p>
                   <div className="mt-5">
                     <a
                       href="#calendar-section"
                       className="border border-[#C6EBFF] bg-black/20 backdrop-blur-xl text-xs py-2 px-3 rounded-lg ButtonHoverShadow"
-                      target="_blank"
                     >
-                      BOOK A CALL
+                      {t("hero.bookCall")}
                     </a>
                   </div>
                 </div>
@@ -133,11 +130,10 @@ const Benefits = () => {
                 >
                   <div className="flex-1 p-10">
                     <h5 className="text-2xl mb-2 orbitron">
-                      Technical Support
+                      {t("benefits.technicalSupport")}
                     </h5>
                     <p className="text-white quicksand-reg mb-4">
-                      Any problem with your website? You don’t need to figure
-                      out what happened. We do it for you!
+                      {renderText(t("benefits.technicalSupportDescription"))}
                     </p>
                     <div className="flex justify-center">
                       <img src={ImageRow} alt="Card Image" />

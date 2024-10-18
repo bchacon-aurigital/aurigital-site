@@ -1,7 +1,9 @@
 import { logo, linkedin2, instagram2, facebook2, whatsapp2 } from "../assets";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const scrollTopRef = useRef(null);
 
   // Show or hide the "Back to top" button based on scroll position
@@ -38,12 +40,9 @@ const Footer = () => {
       </div>
       <div className="m-10 mt-5 flex flex-col text-start sm:flex-row gap-5">
         <div className="flex flex-col text-white text-glow orbitron text-md tracking-wide">
-          <div className="text-center sm:text-start">
-            <p className="pb-2">
-              "Change is hard at first, messy in the middle,
-              <br className="hidden md:flex" /> and gorgeous at the end"
-            </p>
-            <p> - Robin Sharma</p>
+          <div className="max-w-[350px] text-center sm:text-start">
+            <p className="pb-2">{t("footer.quote.text")}</p>
+            <p>{t("footer.quote.author")}</p>
           </div>
           <div className="flex flex-row justify-center pb-10 sm:justify-start py-3">
             <a
@@ -65,18 +64,18 @@ const Footer = () => {
         </div>
         <div className="flex flex-row quicksand-md text-xs mx-auto gap-10 text-white text-glow">
           <div className="flex flex-col gap-1">
-            <p className="quicksand-b">SITE</p>
-            <a href="#hero-section">Home</a>
-            <a href="#benefit-section">Benefits</a>
-            <a href="#process-section">Process</a>
-            <a href="#testimonial-section">Testimonials</a>
-            <a href="#portfolio-section">Portfolio</a>
-            <a href="#support-section">Support</a>
-            <a href="#calendar-section">Agenda</a>
+            <p className="quicksand-b">{t("footer.site")}</p>
+            <a href="#hero-section">{t("footer.menu.home")}</a>
+            <a href="#benefit-section">{t("footer.menu.benefits")}</a>
+            <a href="#process-section">{t("footer.menu.process")}</a>
+            <a href="#testimonial-section">{t("footer.menu.testimonials")}</a>
+            <a href="#portfolio-section">{t("footer.menu.portfolio")}</a>
+            <a href="#support-section">{t("footer.menu.support")}</a>
+            <a href="#calendar-section">{t("footer.menu.agenda")}</a>
           </div>
           <div className="flex flex-col gap-1">
             {" "}
-            <p className="quicksand-b">SOCIALS</p>
+            <p className="quicksand-b">{t("footer.socials")}</p>
             <a href="https://www.instagram.com/aurigital/n" target="_blank">
               Instagram
             </a>
@@ -95,15 +94,15 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-1">
             {" "}
-            <p className="quicksand-b">Resources</p>
+            <p className="quicksand-b">{t("footer.resources")}</p>
             <a href="https://portfolio.aurigital.com" target="_blank">
-              Portfolio
+              {t("footer.resourcesLinks.portfolio")}
             </a>
             <a href="https://bookings.aurigital.com" target="_blank">
-              Bookings
+              {t("footer.resourcesLinks.bookings")}
             </a>
             <a href="https://terms.aurigital.com/" target="_blank">
-              Terms & Conditions
+              {t("footer.resourcesLinks.terms")}
             </a>
           </div>
         </div>
@@ -115,7 +114,9 @@ const Footer = () => {
           ref={scrollTopRef}
           style={{ display: "flex", alignItems: "center" }} // Additional inline flex styles for alignment
         >
-          <span className="inline-block quicksand-b ">Back to top</span>{" "}
+          <span className="inline-block quicksand-b ">
+            {t("footer.backToTop")}
+          </span>{" "}
           {/* Ensures text is inline */}
         </button>
       </div>

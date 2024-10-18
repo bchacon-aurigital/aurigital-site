@@ -2,8 +2,10 @@ import { PortfolioImg, PortfolioMob } from "../assets";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
-const Portfolio = () => {
+const Portfolio = ({ renderText }) => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
       duration: 1500, // Adjust the animation duration
@@ -16,14 +18,11 @@ const Portfolio = () => {
       id="portfolio-section"
     >
       <div className="px-4">
-        <h1 className="orbitron text-glow text-white leading-10 max-sm:text-2xl text-3xl ">
-          Check our portfolio
+        <h1 className="max-w-[650px] orbitron text-glow text-white leading-10 max-sm:text-2xl text-3xl ">
+          {t("portfolio.title")}
         </h1>
         <p className="quicksand-sb text-white mb-10 sm:mr-20 mt-2 lg:mt-4">
-          We are up to the challenge of creating each project better than the
-          last, <br className="flex lg:hidden" /> and then we upgrade the
-          existing ones constantly to keep up. <br />
-          Check our portfolio and to find what's new!
+          {renderText(t("portfolio.description"))}
         </p>
         <div className="flex justify-start mb-10">
           <a
@@ -31,7 +30,7 @@ const Portfolio = () => {
             className="border text-white border-[#C6EBFF] text-xs py-2 px-3 rounded-lg bookCallButton"
             target="_blank"
           >
-            Go to Portfolio
+            {t("portfolio.button")}
           </a>
         </div>
       </div>

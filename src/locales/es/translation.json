@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "title": "Desarrollo web para",
+    "titleHighlight": "marcas personales sobresalientes",
+    "description": "¡Abraza la Individualidad!\nDefine cómo te ve internet con un sitio web creado por expertos.",
+    "bookCall": "AGENDA UNA LLAMADA",
+    "findWebsite": "Encuentra el sitio web para mí"
+  },
+  "benefits": {
+    "title": "Tu propio espacio digital",
+    "description": "Creamos un sitio web donde tu marca personal puede prosperar. \nUsando el conjunto de habilidades de nuestro equipo y las herramientas adecuadas, nos encargamos de todos los aspectos técnicos de tu sitio web para que puedas concentrarte en tu negocio y experiencia.",
+    "groundbreakingTechnology": "Tecnología\nInnovadora",
+    "bestTools": "Las mejores herramientas integradas\npara máxima funcionalidad y estética",
+    "gtTrends": "Las ultimas tendencias\nen diseño y tecnología.",
+    "gtTasks": "Funcionalidades web para\nautomatizar tus tareas.",
+    "gtAnimations": "Interacciones animadas\ny microanimaciones",
+    "aiDescription": "¡Aprovechemos la IA! Complementamos nuestros sitios web con imágenes y elementos generados por IA para darle el toque final.",
+    "unlimitedReviews": "Revisiones Ilimitadas",
+    "unlimitedReviewsDescription": "Entendemos que tu marca evoluciona constantemente junto a ti. Por eso, aseguramos que tu sitio web esté al día con esa evolución.",
+    "technicalSupport": "Soporte Técnico",
+    "technicalSupportDescription": "¿Algún problema con tu sitio web?\n¡No necesitas averiguar qué pasó! ¡Lo hacemos por ti!"
+  },
+  "statement": {
+    "reflectWebsite": "¿Tu sitio web refleja la excelencia de tu trabajo, o te está frenando?",
+    "transformDigital": "TRANSFORMEMOS TU PRESENCIA DIGITAL...",
+    "standOutTitle": "¡Destácate!",
+    "standOutDescription": "Diferencia tu oficio, preséntalo como algo único",
+    "makeItYoursTitle": "Hazlo tuyo",
+    "makeItYoursDescription": "A diferencia de las redes sociales, tienes opciones ilimitadas aquí.",
+    "makeItFunctionalTitle": "Hazlo funcional",
+    "makeItFunctionalDescription": "Automatiza las tareas diarias en tu sitio. Dale prioridad a lo que mejor sabes hacer."
+  },
+  "process": {
+    "title": "El Proceso",
+    "description": "Desde el primer día, te guiamos a través del proceso de creación de la primera versión de tu sitio. Y una vez completado, nos aseguramos de que se mantenga funcional y actualizado.",
+    "step1Subtitle": "Todo empieza con una idea",
+    "step1Description": "Escuchemos la tuya",
+    "step2Subtitle": "La transformamos en un diseño digital personalizado.",
+    "step2Description": "Una vez que estés contento con el resultado...",
+    "step3Subtitle": "La creamos en la web. \n¡Tu espacio digital está listo!",
+    "step3Description": "Y despues...",
+    "step4Subtitle": "PAZ MENTAL",
+    "step4Description": "Impulsado por soporte constante \ny actualizaciones bajo demanda."
+  },
+  "testimonials": {
+    "title": "Comprometidos a Deleitar a Nuestros Clientes",
+    "description": "¡Nos apasiona crear sorpresas para los clientes! Lee lo que nuestros clientes están diciendo y descubre por qué somos tan apasionados por superar expectativas.",
+    "abraham": {
+      "content": "He sido barbero profesional por más de 8 años y mi mayor problema ha sido el manejo de citas para mis clientes. Muchos me escribían o llamaban durante mis horas de trabajo, y se me complicaba atender sus consultas, lo que ocasionaba la pérdida de clientes. Aurigital me ha ahorrado tiempo, facilitando la agenda con un solo click. Su diseño web y facilidad de uso logran que la experiencia sea siempre positiva. Yo personalmente solo puedo compartir felicidad y completo respaldo y admiración a esta gran empresa. Siempre agradecido y recomendado, Gracias Aurigital."
+    },
+    "tulsi": {
+      "content": "Aurigital me ayudó a conocer mis necesidades en el mundo digital y se han encargado de acompañarme en el proceso. Junto a ellos he podido desarrollar no solo una página web estética, sino funcional. Me ayudaron a organizar mi proceso de agendar clientes, venta de libros, promoción de talleres nuevos y creación de un blog para explotar mi creatividad. Estoy segura de que puedo seguir confiando en su trabajo para seguir construyendo plataformas de crecimiento, conocimiento y amor."
+    },
+    "calo": {
+      "content": "En Servidental CR, contratamos los servicios de Aurigital para la actualización de nuestro sitio web, y no podríamos estar más satisfechos. Desde el primer momento, el equipo demostró gran profesionalismo y tiempos de respuesta sumamente eficientes. Nos acompañaron en todo el proceso, escuchando nuestras ideas y ayudándonos a plasmarlas de manera clara y efectiva en la web. Gracias a su atención personalizada, logramos transmitir nuestro mensaje a los clientes tal como lo habíamos imaginado. Recomiendo a Aurigital sin reservas; su servicio es excepcional."
+    }
+  },
+  "portfolio": {
+    "title": "Mira nuestro portafolio",
+    "description": "Estamos listos para el desafío de crear cada proyecto mejor que el anterior, y luego actualizamos constantemente los existentes para mantenernos al día.\n¡Mira nuestro portafolio para ver qué hay de nuevo!",
+    "button": "Ir al portafolio"
+  },
+  "support": {
+    "title": "Plan Paz Mental",
+    "description": "Gestión de sitios web sin complicaciones. Aurigital hospeda, gestiona, asegura y actualiza tu sitio web, para que puedas enfocarte en hacer crecer tu negocio.",
+    "alwaysFreshTitle": "Siempre Fresco, Siempre Relevante",
+    "alwaysFreshDescription": "Mantenemos tu sitio web actualizado con los últimos activos multimedia, promociones e información, asegurando que siempre represente lo mejor de tu marca.",
+    "regularUpdatesTitle": "Actualizaciones Regulares",
+    "regularUpdatesDescription": "Mantén a tus clientes comprometidos con contenido e ideas nuevas. Agrega nuevas funcionalidades que te ayuden a gestionar tu negocio a medida que crece.",
+    "technicalSupportTitle": "Soporte Técnico",
+    "technicalSupportDescription": "Ya sea visual o funcional, solucionamos, evaluamos y corregimos cualquier problema que pueda enfrentar tu sitio.",
+    "webSecurityTitle": "Seguridad Web",
+    "webSecurityDescription": "Proporcionamos y renovamos tu certificado SSL, generando confianza con tus visitantes y motores de búsqueda, para que tu sitio no sea marcado como peligroso.",
+    "manageIntegrationsTitle": "Gestión y Actualización de Integraciones",
+    "manageIntegrationsDescription": "Todo funcionando de\nmanera fluida.",
+    "readyToWork": "¿Estás listo para trabaja\ncon nosotros?",
+    "personalizedServiceTitle": "Servicio Personalizado",
+    "personalizedServiceDescription": "Tienes un contacto directo asignado para ayudarte con tus solicitudes. ¡No más buscar interminablemente en la web! Estamos a un mensaje de distancia.",
+    "notSureTitle": "¿NO ESTÁS SEGURO DE QUÉ TIPO DE SITIO WEB\nES EL ADECUADO PARA TI?",
+    "messageAurigital": "Conversa con Nosotros"
+  },
+  "calendar": {
+    "title": "¡Hablemos y creemos!",
+    "description": "¿Listo para empezar?\nEstamos aquí para hablar de tus ideas y hacerlas realidad."
+  },
+  "footer": {
+    "quote": {
+      "text": "El cambio es difícil al principio, desordenado en el medio, y maravilloso al final",
+      "author": "- Robin Sharma"
+    },
+    "site": "SITIO",
+    "socials": "REDES",
+    "resources": "RECURSOS",
+    "menu": {
+      "home": "Inicio",
+      "benefits": "Beneficios",
+      "process": "Proceso",
+      "testimonials": "Testimonios",
+      "portfolio": "Portafolio",
+      "support": "Soporte",
+      "agenda": "Agenda"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "Linkedin",
+      "facebook": "Facebook",
+      "whatsapp": "Whatsapp"
+    },
+    "resourcesLinks": {
+      "portfolio": "Portafolio",
+      "bookings": "Reservaciones",
+      "terms": "Términos y Condiciones"
+    },
+    "backToTop": "Volver arriba"
+  },
+  "meta": {
+    "description": "Creamos sitios web para marcas personales, enfocados en diseños visualmente atractivos y funcionales, que incluyen blogs, comercio electrónico y agendas virtuales. Con sede en San José, Costa Rica, servimos a clientes en EE.UU. y Europa."
+  }
+}

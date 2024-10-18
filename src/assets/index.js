@@ -23,7 +23,7 @@ import Process4 from "./Videos/bg-process4.mp4";
 import BGTestimonials from "./Videos/bg-testimonials.mp4";
 import Support1 from "./Videos/bg-support1.mp4";
 import Support2 from "./Videos/bg-support2.mp4";
-import StatementVideo from "./Videos/statement-video.webm";
+import StatementVideo from "./Videos/statement-video.mp4";
 import HeroVideo from "./Videos/aurigital-hero.webm";
 
 import Abraham from "./Images/abraham.avif";

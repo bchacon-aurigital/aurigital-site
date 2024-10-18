@@ -70,11 +70,20 @@ html {
   color: white;
 }
 
+.language-button {
+  padding: 4px;
+  background-color: #34505b;
+  border: 1px solid #98c5d7;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 -0.1em 1.2em -0.2em #fff;
+  box-shadow: 0 -0.1em 1.2em -0.2em #fff;
+}
+
 .bg-blue-grad {
   border-radius: 40px;
   background: linear-gradient(
     144deg,
-    rgba(127, 217, 255, 0.85) 8.24%,
+    rgba(128, 217, 255, 0.85) 8.24%,
     rgba(227, 247, 255, 0.85) 60.04%,
     rgba(227, 247, 255, 0.85) 87.93%
   );

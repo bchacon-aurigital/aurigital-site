@@ -9,8 +9,11 @@ import {
   ProgressBar,
   logo,
 } from "../assets";
+import { useTranslation } from "react-i18next";
 
-const Process = () => {
+const Process = ({ renderText }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const scrollBtn = document.getElementById("scrollBtn");
 
@@ -64,29 +67,26 @@ const Process = () => {
         className="max-w-[1100px] mx-10 lg:mx-auto px-5 lg:px-10"
         id="process-section"
       >
-        <div className="lg:py-32 sm:py-24">
+        <div className="max-w-[650px] lg:py-32 sm:py-24">
           <h1 className="text-white leading-10 max-sm:text-2xl text-4xl py-2 orbitron">
-            The Process
+            {t("process.title")}
           </h1>
           <p className="text-white text-md quicksand-md">
-            From day #1, we guide you through the process of creating the first
-            version of <br className="hidden md:flex" /> your site. And once it
-            is Completed, we make sure to keep it functional and{" "}
-            <br className="hidden md:flex" /> updated.
+            {renderText(t("process.description"))}
           </p>
         </div>
         <div className="timeline-animation relative mb-20 py-20">
           <div className="absolute left-1/2 -translate-x-1/2 h-[100%] top-0 hidden md:flex">
             <img className="h-[110%]" src={ProgressBar} alt="progressbar" />
           </div>
-          <p className="text-white orbitron scrollBtnLabel hidden md:flex">
+          {/* <p className="text-white orbitron scrollBtnLabel hidden md:flex">
             Click To Play{" "}
             <span>
               {">"}
               {">"}
               {">"}
             </span>
-          </p>
+          </p> */}
           <div
             className="absolute top-[-40px] -translate-x-1/2 left-1/2 cursor-pointer hidden md:flex z-50"
             id="scrollBtn"
@@ -115,6 +115,7 @@ const Process = () => {
                     alt="Card Video"
                     className="w-full h-full object-cover absolute -z-10"
                     autoPlay
+                    playsInline
                     loop
                     muted
                   ></video>
@@ -125,10 +126,10 @@ const Process = () => {
                         1
                       </p>
                       <p className="text-[white] m-0 ps-4 pb-3">
-                        Everything starts with an idea
+                        {t("process.step1Subtitle")}
                       </p>
                       <p className="text-[white] text-center text-sm m-0 ps-4 pb-3">
-                        Let's hear yours
+                        {t("process.step1Description")}
                       </p>
                     </div>
                   </div>
@@ -146,6 +147,7 @@ const Process = () => {
                     alt="Card Video"
                     className="w-full h-full object-cover absolute -z-10"
                     autoPlay
+                    playsInline
                     loop
                     muted
                   ></video>
@@ -156,10 +158,10 @@ const Process = () => {
                         2
                       </p>
                       <p className="text-[white] text-center m-0 ps-4 pb-3">
-                        We transform it into a customized digital design
+                        {renderText(t("process.step2Subtitle"))}
                       </p>
                       <p className="text-[white] text-center text-sm m-0 ps-4 pb-3">
-                        Once you're happy with the result...
+                        {renderText(t("process.step2Description"))}
                       </p>
                     </div>
                   </div>
@@ -179,6 +181,7 @@ const Process = () => {
                     alt="Card Video"
                     className="w-full h-full object-cover absolute -z-10"
                     autoPlay
+                    playsInline
                     loop
                     muted
                   ></video>
@@ -189,11 +192,10 @@ const Process = () => {
                         3
                       </p>
                       <p className="text-[white] m-0 ps-4 pb-3">
-                        We actually create it on the web <br /> Your digital
-                        space is ready!
+                        {renderText(t("process.step3Subtitle"))}
                       </p>
                       <p className="text-[white] text-center text-sm m-0 ps-4 pb-3">
-                        Let's hear yours
+                        {renderText(t("process.step3Description"))}
                       </p>
                     </div>
                   </div>
@@ -211,6 +213,7 @@ const Process = () => {
                     alt="Card Video"
                     className="w-full h-full object-cover absolute -z-10"
                     autoPlay
+                    playsInline
                     loop
                     muted
                   ></video>
@@ -221,10 +224,10 @@ const Process = () => {
                         4
                       </p>
                       <p className="text-[white] m-0 ps-4 pb-3 text-center">
-                        PEACE OF MIND
+                        {renderText(t("process.step4Subtitle"))}
                       </p>
                       <p className="text-[white] text-center text-sm m-0 ps-4 pb-3">
-                        Powered by Constant Support & <br /> On-demand Updates.
+                        {renderText(t("process.step4Description"))}
                       </p>
                     </div>
                   </div>

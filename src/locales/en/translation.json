@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "title": "Web Development for outstanding",
+    "titleHighlight": "personal brands",
+    "description": "Embrace Individuality!\nDefine how the internet sees you with a website made by experts.",
+    "bookCall": "BOOK A CALL",
+    "findWebsite": "Find the website for me"
+  },
+  "benefits": {
+    "title": "Your own digital space",
+    "description": "We craft a website where your personal brand can thrive. \nUsing our team’s skillset and the right tools, we take care of all the technical aspects of your website so you can focus on your business and expertise.",
+    "groundbreakingTechnology": "Groundbreaking\nTechnology",
+    "bestTools": "The best tools integrated for maximum\nfunctionality and aesthetic",
+    "gtTrends": "Latest Technology and\ndesign trends",
+    "gtTasks": "Web functionalities to\nauthomatize your tasks.",
+    "gtAnimations": "Animated Interactions\nand microanimations",
+    "aiDescription": "Let’s take advantage of AI! We complement our websites with AI-generated images and elements to give it the final touch.",
+    "unlimitedReviews": "Unlimited Reviews",
+    "unlimitedReviewsDescription": "We understand that your brand constantly evolves along with you. That’s why we ensure that your website is up to date with that evolution.",
+    "technicalSupport": "Technical Support",
+    "technicalSupportDescription": "Any problem with your website?\nYou don’t need to figure out what happened. We do it for you!"
+  },
+  "statement": {
+    "reflectWebsite": "Does your website reflect the excellence of your work, or is it holding you back?",
+    "transformDigital": "LET'S TRANSFORM YOUR DIGITAL PRESENCE...",
+    "standOutTitle": "Stand Out!",
+    "standOutDescription": "Differentiate your craft, embrace your uniqueness.",
+    "makeItYoursTitle": "Make It Yours",
+    "makeItYoursDescription": "Unlike social media, you have unlimited options here.",
+    "makeItFunctionalTitle": "Make It Functional",
+    "makeItFunctionalDescription": "Automate everyday tasks on your site. Focus on your skill."
+  },
+  "process": {
+    "title": "The Process",
+    "description": "From day #1, we guide you through the process of creating the first version of your site. And once it is completed, we make sure to keep it functional and updated.",
+    "step1Subtitle": "Everything starts with an idea",
+    "step1Description": "Let's hear yours",
+    "step2Subtitle": "We transform it into a customized digital design.",
+    "step2Description": "Once you're happy with the result...",
+    "step3Subtitle": "We actually create it on the web. \nYour digital space is ready!",
+    "step3Description": "And afterwards...",
+    "step4Subtitle": "PEACE OF MIND",
+    "step4Description": "Powered by Constant Support & \nOn-demand Updates."
+  },
+  "testimonials": {
+    "title": "Committed To Delivering Delight",
+    "description": "We're all about creating customer wows! Read what our customers are saying and see why we're so passionate about exceeding expectations!",
+    "abraham": {
+      "content": "I have been a professional barber for over 8 years, and my biggest problem has been managing appointments for my clients. Many would message or call during my working hours, making it difficult to handle their requests, which led to losing clients. Aurigital has saved me time, making the schedule easy with a single click. Their web design and ease of use ensure a positive experience every time. I can personally only share happiness and complete support and admiration for this great company. Always grateful and recommended, thank you Aurigital."
+    },
+    "tulsi": {
+      "content": "Aurigital helped me understand my needs in the digital world, and they have accompanied me in the process. Together, we have developed not only an aesthetic website but also a functional one. They helped me organize my client booking process, book sales, workshop promotion, and create a blog to express my creativity. I am confident that I can continue to trust their work to keep building growth platforms, knowledge, and love."
+    },
+    "calo": {
+      "content": "At Servidental CR, we hired Aurigital's services to update our website, and we couldn't be more satisfied. From the beginning, the team demonstrated great professionalism and highly efficient response times. They guided us throughout the process, listening to our ideas and helping us implement them clearly and effectively on the web. Thanks to their personalized attention, we were able to convey our message to clients just as we had imagined. I recommend Aurigital without reservations; their service is exceptional."
+    }
+  },
+  "portfolio": {
+    "title": "Check our portfolio",
+    "description": "We are up to the challenge of creating each project better than the last, and then we upgrade the existing ones constantly to keep up.\nCheck our portfolio to find what's new!",
+    "button": "Go to Portfolio"
+  },
+  "support": {
+    "title": "Peace Of Mind Plan",
+    "description": "Hassle-Free Website Management Content. Aurigital actively hosts, manages, secures, and updates your website, so you can focus on growing your business.",
+    "alwaysFreshTitle": "Always Fresh, Always Relevant",
+    "alwaysFreshDescription": "We keep your website evolving by updating it with the latest media assets, promotions, and information, ensuring it always represents your brand at its best.",
+    "regularUpdatesTitle": "Regular Updates",
+    "regularUpdatesDescription": "Keep your customers engaged with new content and ideas. Add new functionalities that help you manage your business as it grows.",
+    "technicalSupportTitle": "Technical Support",
+    "technicalSupportDescription": "Whether it's visual or functional, we troubleshoot, assess, and correct any issues your site may encounter.",
+    "webSecurityTitle": "Web Security",
+    "webSecurityDescription": "We provide and renew your SSL certificate, building trust with your visitors and search engines, so your site won't be flagged as dangerous.",
+    "manageIntegrationsTitle": "Manage and Update of Integrations",
+    "manageIntegrationsDescription": "Everything working together\nsmoothly.",
+    "readyToWork": "Are you ready to work\nwith us?",
+    "personalizedServiceTitle": "Personalized Service",
+    "personalizedServiceDescription": "You get a direct contact assigned to help you with your requests. No more searching endlessly through the web for support channels. We're just a message away!",
+    "notSureTitle": "NOT SURE WHAT KIND OF WEBSITE\nIS RIGHT FOR YOU?",
+    "messageAurigital": "Message Aurigital"
+  },
+  "calendar": {
+    "title": "Let's talk\nand create!",
+    "description": "Ready to get started?\nWe’re here to talk through your ideas and make them happen."
+  },
+  "footer": {
+    "quote": {
+      "text": "Change is hard at first, messy in the middle, and gorgeous at the end",
+      "author": "- Robin Sharma"
+    },
+    "site": "SITE",
+    "socials": "SOCIALS",
+    "resources": "RESOURCES",
+    "menu": {
+      "home": "Home",
+      "benefits": "Benefits",
+      "process": "Process",
+      "testimonials": "Testimonials",
+      "portfolio": "Portfolio",
+      "support": "Support",
+      "agenda": "Agenda"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "Linkedin",
+      "facebook": "Facebook",
+      "whatsapp": "Whatsapp"
+    },
+    "resourcesLinks": {
+      "portfolio": "Portfolio",
+      "bookings": "Bookings",
+      "terms": "Terms & Conditions"
+    },
+    "backToTop": "Back to top"
+  },
+  "meta": {
+    "description": "We create websites for personal brands, focusing on visually appealing and functional designs, including blogs, e-commerce, and virtual agendas. Based in San Jose, Costa Rica, we serve clients in the US and Europe."
+  }
+}

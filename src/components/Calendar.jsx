@@ -1,6 +1,8 @@
 import { ImageShadow } from "../assets";
+import { useTranslation } from "react-i18next";
 
-const Calendar = () => {
+const Calendar = ({ renderText }) => {
+  const { t } = useTranslation();
   return (
     <div className="background-shadows " id="calendar-section">
       <div className="absolute -top-44 -z-40 ">
@@ -10,17 +12,17 @@ const Calendar = () => {
         <div className="my-5 p-10">
           <h1 className="orbitron text-white text-center text-glow tracking-wide ">
             {" "}
-            Let's talk and <br /> create!
+            {renderText(t("calendar.title"))}
           </h1>
           <p className="text-center text-white quicksand-md text-base pt-5">
-            Ready to get started? <br />
-            We’re here to talk through your ideas and make them happen.
+            {renderText(t("calendar.description"))}
           </p>
         </div>
         <div>
           <iframe
             src="https://app.simplymeet.me/andresariasvirtual?is_widget=1&view="
             className="w-full h-[650px] sm:h-[750px] rounded-2xl"
+            loading="lazy"
           ></iframe>
         </div>
       </div>

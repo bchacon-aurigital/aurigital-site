@@ -3,8 +3,11 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+
   const settings = {
     dots: true,
     infinite: false,
@@ -40,18 +43,15 @@ const Testimonials = () => {
   const testimonials = [
     {
       image: Abraham,
-      content:
-        "He sido barbero profesional por más de 8 años y mi mayor problema ha sido el manejo de citas para mis clientes. Muchos me escribían o llamaban durante mis horas de trabajo, y se me complicaba atender sus consultas, lo que ocasionaba la pérdida de clientes. Aurigital me ha ahorrado tiempo, facilitando la agenda con un solo click. Su diseño web y facilidad de uso logran que la experiencia sea siempre positiva. Yo personalmente solo puedo compartir felicidad y completo respaldo y admiración a esta gran empresa. Siempre agradecido y recomendado, Gracias Aurigital.",
+      content: t("testimonials.abraham.content"),
     },
     {
       image: Tulsi,
-      content:
-        "Aurigital me ayudó a conocer mis necesidades en el mundo digital y se han encargado de acompañarme en el proceso, junto a ellos he podido desarollar no solo una página web estética sino funcional, me ayudaron a ordenar mi proceso de agendar clientes, venta de libros, promoción de talleres nuevos y creación de un blog para explotar mi creatividad. Estoy segura de que puedo seguir confiando en su trabajo para seguir construyendo plataformas de crecimiento, conocimiento y amor.		",
+      content: t("testimonials.tulsi.content"),
     },
     {
       image: Calo,
-      content:
-        "En Servidental CR, contratamos los servicios de Aurigital para la actualización de nuestro sitio web, y no podríamos estar más satisfechos. Desde el primer momento, el equipo demostró gran profesionalismo y tiempos de respuesta sumamente eficientes. Nos acompañaron en todo el proceso, escuchando nuestras ideas y ayudándonos a plasmarlas de manera clara y efectiva en la web. Gracias a su atención personalizada, logramos transmitir nuestro mensaje a los clientes tal como lo habíamos imaginado. Recomiendo a Aurigital sin reservas; su servicio es excepcional.",
+      content: t("testimonials.calo.content"),
     },
   ];
 
@@ -94,14 +94,12 @@ const Testimonials = () => {
         </div>
         <div className="bg-[#1682BE]/10 m-4 lg:mt-8 xl:mt-28 px-5 pt-20 pb-5 overflow-hidden backdrop-blur-2xl rounded-[2rem]">
           <div className="max-w-[1100px] px-5 lg:px-10 lg:mx-auto ">
-            <div className="lg:py-5 max-sm:pb-5">
+            <div className="max-w-[650px] lg:py-5 max-sm:pb-5">
               <h1 className="text-white leading-10 max-sm:text-2xl text-4xl py-2 orbitron">
-                Committed To Delivering Delight
+                {t("testimonials.title")}
               </h1>
               <p className="text-white text-md quicksand-md mb-5">
-                We're all about creating customer wows! Read what our customers
-                are saying <br className="hidden md:flex" /> and see why we're
-                so passionate about exceeding expectations!
+                {t("testimonials.description")}
               </p>
             </div>
 
@@ -114,6 +112,7 @@ const Testimonials = () => {
                       alt="Card Video"
                       className="w-full h-full object-cover rounded-xl absolute -z-10"
                       loop
+                      playsInline
                       muted
                     ></video>
                     <div className="relative">
@@ -140,7 +139,7 @@ const Testimonials = () => {
                 href="#calendar-section"
                 className="border text-white border-[#C6EBFF] text-xs py-2 px-3 rounded-lg bookCallButton"
               >
-                BOOK A CALL
+                {t("hero.bookCall")}
               </a>
             </div>
           </div>
