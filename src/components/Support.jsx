@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Support1, Support2, ImageShadow } from "../assets";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -7,6 +7,12 @@ import { GoArrowRight } from "react-icons/go";
 
 const Support = ({ renderText }) => {
   const { t } = useTranslation();
+
+  const [isFormVisible, setFormVisible] = useState(false);
+
+  const toggleForm = () => {
+    setFormVisible(!isFormVisible);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -19,6 +25,42 @@ const Support = ({ renderText }) => {
 
   return (
     <>
+      <div
+        className={`form-container ${isFormVisible ? "open" : ""}`}
+        style={{
+          position: "fixed",
+          top: 0,
+          right: "-100%",
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.9)",
+          zIndex: 9999,
+          transition: "transform 0.4s ease-in-out",
+          overflowY: "auto",
+        }}
+      >
+        <button
+          className="close-button"
+          onClick={toggleForm}
+          style={{
+            position: "absolute",
+            top: "15px",
+            left: "15px",
+            background: "none",
+            border: "none",
+            color: "white",
+            fontSize: "30px",
+            cursor: "pointer",
+            zIndex: 10000,
+          }}
+        >
+          &times;
+        </button>
+        <div
+          className="elfsight-app-ebab3519-be97-4d7d-9f7a-67e2eb5df3bc"
+          data-elfsight-app-lazy
+        ></div>
+      </div>
       <div className="background-shadows " id="support-section">
         <div className="right-shadow top-80 ">
           <img src={ImageShadow} alt="Card Image" />
@@ -165,7 +207,10 @@ const Support = ({ renderText }) => {
               </p>
             </div>
             <div>
-              <button className="border rounded-xl px-6 py-2 flex gap-1 items-center text-sm text-[#C6EBFF] ButtonHoverShadow">
+              <button
+                onClick={toggleForm}
+                className="border rounded-xl px-6 py-2 flex gap-1 items-center text-sm text-[#C6EBFF] ButtonHoverShadow"
+              >
                 {t("hero.findWebsite")}
                 <GoArrowRight />
               </button>

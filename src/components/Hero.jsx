@@ -9,9 +9,15 @@ import { ImageShadow, HeroVideo } from "../assets";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Hero = ({ renderText }) => {
+  const [isFormVisible, setFormVisible] = useState(false);
+
+  const toggleForm = () => {
+    setFormVisible(!isFormVisible);
+  };
+
   const { t, i18n } = useTranslation(); // Using the translation hook
   const navigate = useNavigate(); // Access navigate for routing
 
@@ -28,6 +34,32 @@ const Hero = ({ renderText }) => {
 
   return (
     <div className="background-shadows relative" id="hero-section">
+      <div
+        className={`form-container ${isFormVisible ? "open" : ""}`}
+        style={{
+          position: "fixed",
+          top: 0,
+          right: "-100%",
+          width: "100%",
+          height: "100vh", // Changed to full viewport height
+          backgroundColor: "rgba(0, 0, 0, 0.9)",
+          zIndex: 9999, // Increased z-index to be above everything
+          transition: "transform 0.4s ease-in-out",
+          overflowY: "auto",
+        }}
+      >
+        <button
+          className="close-button"
+          onClick={toggleForm}
+          style={{ zIndex: 10000 }} // Ensure close button is above form
+        >
+          &times;
+        </button>
+        <div
+          className="elfsight-app-ebab3519-be97-4d7d-9f7a-67e2eb5df3bc"
+          data-elfsight-app-lazy
+        ></div>
+      </div>
       <div className=" relative h-[90vh] m-5 lg:m-9">
         <div className="absolute lg:top-6 xl:top-10 inset-0 w-full text-white max-h-[250px] z-40">
           <Navbar />
@@ -47,13 +79,13 @@ const Hero = ({ renderText }) => {
 
         <div className="w-full px-2 top-[15%] lg:top-[20%] flex-col justify-center items-center text-center absolute z-30">
           <div
-            className="2xl:text-[42px] lg:text-[35px] md:text-[28px] max-sm:pt-10 orbitron tracking-wide text-white"
+            className="2xl:text-[42px] lg:text-[35px] md:text-[28px] max-sm:text-[20px] max-sm:pt-10 orbitron tracking-wide text-white"
             data-aos="fade-up"
           >
             {t("hero.title")}
           </div>
           <div
-            className="brands-gradient 2xl:text-[42px] lg:text-[35px] md:text-[28px] tracking-wide orbitron"
+            className="brands-gradient 2xl:text-[42px] lg:text-[35px] md:text-[28px] max-sm:text-[20px] tracking-wide orbitron"
             data-aos="fade-up"
           >
             {t("hero.titleHighlight")}
@@ -74,10 +106,14 @@ const Hero = ({ renderText }) => {
             >
               {t("hero.bookCall")}
             </a>
-            <button className="transparent-blur-button2 max-sm:text-xs text-sm shadow-custom flex items-center gap-1">
+            <button
+              onClick={toggleForm}
+              className="transparent-blur-button2 max-sm:text-xs text-sm shadow-custom flex items-center gap-1"
+            >
               {t("hero.findWebsite")} <GoArrowRight />
             </button>
           </div>
+
           <div className="absolute right-5 mt-5 z-50">
             <ScrollParallax strength={0.3}>
               <div className="my-4 flex flex-col gap-2 text-white orbitron text-xs ">

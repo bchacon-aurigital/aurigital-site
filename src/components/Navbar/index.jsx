@@ -15,7 +15,7 @@ const Navbar = () => {
     <>
       <nav className="w-full flex gap-8 flex-col-reverse items-center lg:flex-row justify-center mt-5 lg:mx-0 text-center px-2">
         <div className=" bg-black rounded-lg shadow-custom flex-wrap ">
-          <img src={logo} className="w-[40px]" />
+          <img src={logo} className="w-[40px]" alt="logo" />
         </div>
         <div className="lg:hidden self-end pr-5">
           <button

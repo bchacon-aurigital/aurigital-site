@@ -389,6 +389,32 @@ html {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
 }
 
+.form-container.open {
+  transform: translateX(-100%); /* Slide in when form is visible */
+}
+
+/* Make sure the form fills the container */
+.form-container iframe {
+  width: 100%;
+  height: 90%;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it stays above other content */
+}
+
+.close-button:hover {
+  color: #00e1ff; /* Add a hover effect */
+}
+
 @media screen and (max-width: 768px) {
   .card-image {
     min-height: 250px;
