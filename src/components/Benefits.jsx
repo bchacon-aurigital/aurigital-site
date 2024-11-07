@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ScrollParallax } from "react-just-parallax";
-import { Benefit1, Benefit2, ImageShadow, ImageRow } from "../assets";
+import { Benefit1, Benefit1Mobile, Benefit2, ImageShadow, ImageRow } from "../assets";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -13,10 +13,11 @@ const Benefits = ({ renderText }) => {
     AOS.init({
       duration: 1500,
       easing: "ease-in-out",
-      offset: 200, // Adjust the offset to trigger animations at the right time
+      offset: 200,
     });
-    AOS.refresh(); // Optional: Refresh AOS to ensure it picks up new content
+    AOS.refresh();
   }, []);
+
   return (
     <>
       <div className="background-shadows " id="benefit-section">
@@ -36,36 +37,44 @@ const Benefits = ({ renderText }) => {
                 {renderText(t("benefits.description"))}
               </p>
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-[60%,40%] gap-4 justify-center ">
+            <div className="flex flex-col md:grid md:grid-cols-[60%,40%] gap-4 justify-center">
               <div
                 data-aos="fade-up"
-                className="relative max-sm:flex max-sm:flex-col shadow-xl bg-dark text-white rounded-xl overflow-hidden max-sm:mx-5"
+                className="relative flex flex-col md:block shadow-xl bg-dark text-white rounded-xl overflow-hidden max-sm:mx-5"
               >
                 <img
                   src={Benefit1}
                   alt="Card Image"
-                  className="lg:w-[800px] h-full object-cover opacity-90 card-image"
+                  className="hidden md:block lg:w-[800px] h-full object-cover opacity-90 card-image"
                   style={{
                     transformOrigin: "start",
                   }}
                 />
-                <div className="absolute inset-y-0 max-sm:right-0 sm:right-5 flex items-center">
-                  <div className="bg-white/20 quicksand-reg rounded-xl px-4 pt-4 md:p-6 backdrop-blur-md">
-                    <h5 className="text-md md:text-2xl md:mb-2 orbitron">
+                <div className="relative md:hidden">
+                  <img
+                    src={Benefit1Mobile}
+                    alt="Card Image"
+                    className="w-full h-[450px] object-cover opacity-90"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark/90"></div>
+                </div>
+                <div className="md:absolute inset-y-0 w-full max-sm:relative sm:right-5 flex items-center md:w-auto">
+                  <div className="w-full md:w-auto bg-white/20 quicksand-reg rounded-xl px-8 py-5 md:p-6 backdrop-blur-md max-sm:-mt-24 relative z-10">
+                    <h5 className="text-2xl md:text-2xl mb-2 orbitron">
                       {renderText(t("benefits.groundbreakingTechnology"))}
                     </h5>
-                    <p className="border-b-[1px] py-1 md:py-0 md:pb-3 text-xs md:text-sm">
+                    <p className="border-b-[1px] py-1 md:py-0 pb-3 text-md">
                       {renderText(t("benefits.bestTools"))}
                     </p>
-                    <p className="border-b-[1px] py-2 bullet-text text-xs md:text-sm">
+                    <p className="border-b-[1px] py-2 bullet-text text-sm">
                       <span className="bullet"></span>
                       <span> {renderText(t("benefits.gtTrends"))} </span>
                     </p>
-                    <p className="border-b-[1px] py-2 bullet-text text-xs md:text-sm">
+                    <p className="border-b-[1px] py-2 bullet-text text-sm">
                       <span className="bullet"></span>
                       <span> {renderText(t("benefits.gtTasks"))}</span>
                     </p>
-                    <p className="py-3 md:py-2 bullet-text text-xs md:text-sm">
+                    <p className="py-3 md:py-2 bullet-text text-sm">
                       <span className="bullet"></span>
                       <span> {renderText(t("benefits.gtAnimations"))}</span>
                     </p>
@@ -122,11 +131,11 @@ const Benefits = ({ renderText }) => {
                   </div>
                 </div>
               </div>
-              <div className=" max-sm:mx-5  gap-10">
+              <div className="max-sm:mx-5 gap-10">
                 <div
                   data-aos="fade-up"
                   data-aos-delay="500"
-                  className=" bg-black/20 h-full backdrop-blur-lg border md:my-6 text-white rounded-xl shadow-md overflow-hidden flex flex-col"
+                  className="bg-black/20 h-full backdrop-blur-lg border md:my-6 text-white rounded-xl shadow-md overflow-hidden flex flex-col"
                 >
                   <div className="flex-1 p-10">
                     <h5 className="text-2xl mb-2 orbitron">

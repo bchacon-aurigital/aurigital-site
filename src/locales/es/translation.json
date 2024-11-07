@@ -111,9 +111,105 @@
       "bookings": "Reservaciones",
       "terms": "Términos y Condiciones"
     },
-    "backToTop": "Volver arriba"
+    "backToTop": "Volver arriba",
+    "location": "Estamos ubicados en San José, Costa Rica"
   },
   "meta": {
     "description": "Creamos sitios web para marcas personales, enfocados en diseños visualmente atractivos y funcionales, que incluyen blogs, comercio electrónico y agendas virtuales. Con sede en San José, Costa Rica, servimos a clientes en EE.UU. y Europa."
+  },
+  "form": {
+    "mainTitle": "Encuentra el sitio web adecuado para ti",
+    "mainSubtitle": "Aquí es donde seleccionas las características y funcionalidades para tu mundo digital ideal.",
+    "stepLabel": "PASO {{currentStep}} DE {{totalSteps}}",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "yes": "Sí",
+    "no": "No",
+    "selectAllThatApply": "(Selecciona todo lo que aplique)",
+    "successMessage": "¡El formulario se envió correctamente!",
+    "errorMessage": "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.",
+    "submitting": "Enviando...",
+    "error": {
+      "generic": "Este campo es obligatorio."
+    },
+    "step1": {
+      "title": "Cuéntanos sobre ti",
+      "businessName": "¿Cuál es el nombre de tu negocio?",
+      "describeBusiness": "¿Cuál de las siguientes describe mejor tu negocio?",
+      "businessDescriptions": [
+        "Mi negocio está centrado en mi Marca Personal",
+        "Mi negocio tiene su propia marca",
+        "Ofrezco servicios para individuos",
+        "Ofrezco servicios para otras empresas",
+        "Mi negocio tiene una presencia fuerte en redes sociales",
+        "Estoy trabajando en construir una comunidad en redes sociales",
+        "No utilizo mucho las redes sociales",
+        "Tengo mis propios recursos de medios para usar en mi sitio web (imágenes, videos)",
+        "Prefiero usar recursos de medios de internet para potenciar mi sitio"
+      ],
+      "hasPreviousWebsite": "¿Alguna vez has tenido un sitio web antes?",
+      "experience": "¿Cómo fue tu experiencia?",
+      "extraInfo": "¿Te gustaría compartir información adicional sobre tu negocio?"
+    },
+    "step2": {
+      "title": "¡Diviértete construyendo tu idea!",
+      "subtitle": "Tú pides, nosotros entregamos. Cuéntanos qué buscas en tu sitio web.",
+      "primaryGoals": "¿Cuáles son tus objetivos principales para tu nuevo sitio web?",
+      "primaryGoalsList": [
+        "Incrementar el reconocimiento de marca",
+        "Ofrecer servicios en línea",
+        "Ofrecer productos en línea",
+        "Mostrar mi trabajo/portafolio",
+        "Generar prospectos/ventas",
+        "Compartir contenido (ej. blog, artículos)",
+        "Construir una comunidad",
+        "Otro"
+      ],
+      "importanceLevel": "¿Qué tan importante es para ti mantener tu sitio actualizado?",
+      "notLikely": "Poco",
+      "veryLikely": "Mucho",
+      "functionalities": "¿Qué funcionalidades son importantes para ti?",
+      "functionalitiesList": [
+        "Mostrar Portafolio",
+        "Catálogo de Productos (compra offline)",
+        "Sistema de Reservas",
+        "Tienda en Línea",
+        "Blog",
+        "Formularios Personalizados",
+        "Integración con Redes Sociales",
+        "Soporte Multi-idioma",
+        "Galería de Fotos",
+        "Servicios por suscripción",
+        "Elementos funcionales personalizados y únicos"
+      ],
+      "websiteScale": "¿Cuál de las siguientes describe mejor la escala del sitio web que necesitas?",
+      "websiteScaleList": [
+        "Página de Aterrizaje Básica",
+        "Sitio Web con Múltiples Páginas",
+        "Animaciones e Interacciones Básicas",
+        "Animaciones e Interacciones Avanzadas",
+        "Integración con servicios de terceros",
+        "Otro"
+      ],
+      "budget": "¿Tienes un presupuesto específico en mente?",
+      "currencyNote": "Por favor especifica la moneda"
+    },
+    "step3": {
+      "title": "Información de Contacto",
+      "name": "Tu Nombre *",
+      "namePlaceholder": "Ingresa tu nombre",
+      "phoneNumber": "Número de Teléfono *",
+      "phonePlaceholder": "Ingresa tu número de teléfono",
+      "emailAddress": "Correo Electrónico *",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "referralSource": "¿Cómo nos conociste?",
+      "referralSources": [
+        "Motor de Búsqueda (Google, Safari...)",
+        "Recomendación",
+        "Redes Sociales",
+        "Otro"
+      ]
+    }
   }
 }

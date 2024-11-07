@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
@@ -5,31 +6,39 @@ import { GoArrowRight } from "react-icons/go";
 import { ScrollParallax } from "react-just-parallax";
 import { linkedin1, instagram1, facebook1, whatsapp1 } from "../assets";
 import Statement from "./Statement";
-import { ImageShadow, HeroVideo } from "../assets";
+import { ImageShadow, HeroVideo, aurigitalHeroMob, aurigitalHeroMobPoster } from "../assets";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import WebsiteForm from "./Form";
 
-import { useEffect, useState } from "react";
 
 const Hero = ({ renderText }) => {
   const [isFormVisible, setFormVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const toggleForm = () => {
     setFormVisible(!isFormVisible);
   };
 
-  const { t, i18n } = useTranslation(); // Using the translation hook
-  const navigate = useNavigate(); // Access navigate for routing
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    navigate(`/${lng}`); // Navigate to the corresponding route
+    navigate(`/${lng}`);
   };
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -41,9 +50,10 @@ const Hero = ({ renderText }) => {
           top: 0,
           right: "-100%",
           width: "100%",
-          height: "100vh", // Changed to full viewport height
-          backgroundColor: "rgba(0, 0, 0, 0.9)",
-          zIndex: 9999, // Increased z-index to be above everything
+          height: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.3)",
+          backdropFilter: 'blur(20px)',
+          zIndex: 9999,
           transition: "transform 0.4s ease-in-out",
           overflowY: "auto",
         }}
@@ -51,23 +61,21 @@ const Hero = ({ renderText }) => {
         <button
           className="close-button"
           onClick={toggleForm}
-          style={{ zIndex: 10000 }} // Ensure close button is above form
+          style={{ zIndex: 10000 }}
         >
           &times;
         </button>
-        <div
-          className="elfsight-app-ebab3519-be97-4d7d-9f7a-67e2eb5df3bc"
-          data-elfsight-app-lazy
-        ></div>
+        <WebsiteForm />
       </div>
-      <div className=" relative h-[90vh] m-5 lg:m-9">
+      <div className="relative h-[90vh] m-5 lg:m-9">
         <div className="absolute lg:top-6 xl:top-10 inset-0 w-full text-white max-h-[250px] z-40">
           <Navbar />
         </div>
 
         <video
-          src={HeroVideo}
-          className="w-full h-full rounded-[2rem] "
+          src={isMobile ? aurigitalHeroMob : HeroVideo}
+          poster={isMobile ? aurigitalHeroMobPoster : undefined}
+          className="w-full h-full rounded-[2rem]"
           style={{
             objectFit: "cover",
             transformOrigin: "center",
@@ -75,6 +83,7 @@ const Hero = ({ renderText }) => {
           autoPlay
           muted
           playsInline
+          preload="auto"
         />
 
         <div className="w-full px-2 top-[15%] lg:top-[20%] flex-col justify-center items-center text-center absolute z-30">
@@ -131,7 +140,7 @@ const Hero = ({ renderText }) => {
                 </button>
               </div>
               <div
-                className="relative hidden sm:flex shadow-custom p-3 rounded-[10px] border border-white flex-col justify-center items-center gap-[1rem] "
+                className="relative hidden sm:flex shadow-custom p-3 rounded-[10px] border border-white flex-col justify-center items-center gap-[1rem]"
                 style={{
                   backgroundColor: "rgba(0,0,0,0.7)",
                 }}

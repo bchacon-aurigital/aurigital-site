@@ -111,9 +111,105 @@
       "bookings": "Bookings",
       "terms": "Terms & Conditions"
     },
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "location": "We are located at San José, Costa Rica"
   },
   "meta": {
     "description": "We create websites for personal brands, focusing on visually appealing and functional designs, including blogs, e-commerce, and virtual agendas. Based in San Jose, Costa Rica, we serve clients in the US and Europe."
+  },
+  "form": {
+    "mainTitle": "Find the right website for you",
+    "mainSubtitle": "This is where you pick the features and functionalities for your ideal digital world.",
+    "stepLabel": "STEP {{currentStep}} OF {{totalSteps}}",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "yes": "Yes",
+    "no": "No",
+    "selectAllThatApply": "(Select all that apply)",
+    "successMessage": "The form was successfully submitted!",
+    "errorMessage": "There was an error submitting the form. Please try again.",
+    "submitting": "Submitting...",
+    "error": {
+      "generic": "This field is required."
+    },
+    "step1": {
+      "title": "Tell us about yourself",
+      "businessName": "What is the name of your business?",
+      "describeBusiness": "Which of the following best describe yourself and your business?",
+      "businessDescriptions": [
+        "My business is centered on my Personal Brand",
+        "My business has its own brand",
+        "I offer services for individuals",
+        "I offer services for other businesses",
+        "My business has a strong social media presence",
+        "I'm working on building a social media community",
+        "I don't really do social media",
+        "I have my own media assets to use on my website (images, videos)",
+        "I prefer to use internet media resources to power-up my site"
+      ],
+      "hasPreviousWebsite": "Have you ever had a website before?",
+      "experience": "How was your experience?",
+      "extraInfo": "Would you like to share any extra information about your business?"
+    },
+    "step2": {
+      "title": "Have some fun building your idea!",
+      "subtitle": "You ask, we deliver. Tell us what you are looking for on your website.",
+      "primaryGoals": "What are your primary goals for your new website?",
+      "primaryGoalsList": [
+        "Increase brand awareness",
+        "Offer online services",
+        "Offer online products",
+        "Showcase my work/portfolio",
+        "Generate leads/sales",
+        "Share content (e.g., blog, articles)",
+        "Build a community",
+        "Other"
+      ],
+      "importanceLevel": "How important is it for you to keep your space active and up-to-date?",
+      "notLikely": "Not likely",
+      "veryLikely": "Very likely",
+      "functionalities": "What functionalities are important for you?",
+      "functionalitiesList": [
+        "Portfolio Showcase",
+        "Product Catalog (offline purchase)",
+        "Booking System",
+        "Online Store",
+        "Blog",
+        "Custom Forms",
+        "Social Media Integration",
+        "Multi-language Support",
+        "Photo Gallery",
+        "Service by subscription",
+        "Custom and unique functional elements"
+      ],
+      "websiteScale": "Which best describes the scale of the website you need?",
+      "websiteScaleList": [
+        "Basic Landing Page",
+        "Multi-Page Website",
+        "Basic animations and interactions",
+        "Advanced animations and interactions",
+        "Integration with third-party services",
+        "Other"
+      ],
+      "budget": "Do you have a specific budget in mind?",
+      "currencyNote": "Please specify the currency"
+    },
+    "step3": {
+      "title": "Contact Information",
+      "name": "Your Name *",
+      "namePlaceholder": "Enter your name",
+      "phoneNumber": "Phone Number *",
+      "phonePlaceholder": "Enter your phone number",
+      "emailAddress": "Email Address *",
+      "emailPlaceholder": "Enter your email address",
+      "referralSource": "How did you hear about us?",
+      "referralSources": [
+        "Search Engine (Google, Safari...)",
+        "Referral",
+        "Social Media",
+        "Other"
+      ]
+    }
   }
 }
